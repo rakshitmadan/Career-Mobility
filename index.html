@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiple Metric Maps with Detailed Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        .title {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            margin-bottom: 40px;
+            height: 400px;
+        }
+        .map-container {
+            width: 60%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 0;
+        }
+        .map {
+            width: 100%;
+            height: 100%;
+        }
+        .insights-container {
+            width: 40%;
+            font-size: 14px;
+            color: #333;
+            line-height: 1.5;
+            background-color: #fff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="title">Metric Maps with Detailed Insights</div>
+
+    <!-- % Households with SNAP -->
+    <div class="row">
+        <div class="map-container">
+            <iframe src="Pct_hh_snap_map.html" class="map" frameborder="0"></iframe>
+        </div>
+        <div class="insights-container">
+            <h2>Insights: % Households with SNAP</h2>
+            <p>Areas with higher reliance on SNAP often face systemic challenges such as job scarcity, low wages, and inadequate access to affordable nutrition.</p>
+            <p>Initiatives like local economic development, educational programs, and community-supported agriculture (CSA) projects could stimulate economic growth and food security.</p>
+            <p>Additionally, exploring partnerships with local businesses to create employment opportunities tailored to the needs of these communities can further reduce SNAP dependency.</p>
+        </div>
+    </div>
+
+    <!-- % Without Health Insurance -->
+    <div class="row">
+        <div class="map-container">
+            <iframe src="Pct_noHealthInsurance_map.html" class="map" frameborder="0"></iframe>
+        </div>
+        <div class="insights-container">
+            <h2>Insights: % Without Health Insurance</h2>
+            <p>Regions marked by a high percentage of uninsured individuals are likely facing barriers to healthcare, which can exacerbate public health crises. Implementing mobile health clinics to provide basic services and health education in these areas can bridge some immediate gaps.</p>
+            <p>On a policy level, expanding state healthcare programs or introducing new community insurance options could increase coverage. Health education campaigns could emphasize the importance of insurance for preventative care to encourage enrollment among residents.</p>
+        </div>
+    </div>
+    
+    <!-- % Rent Burdenend -->
+    <div class="row">
+        <div class="map-container">
+            <iframe src="pct_rentBurdenend_map.html" class="map" frameborder="0"></iframe>
+        </div>
+        <div class="insights-container">
+            <h2>Insights: % Rent Burdenend</h2>
+            <p>Heavy rent burdens indicate financial stress which could lead to housing instability. Solutions may include building affordable housing, implementing rent control policies, and providing legal assistance for tenants facing unfair eviction.</p>
+            <p>Financial counseling services can empower residents to manage their budgets more effectively, potentially freeing up more income for other essential uses like healthcare and education.</p>
+        </div>
+    </div>
+
+    <!-- % Without Internet Access -->
+    <div class="row">
+        <div class="map-container">
+            <iframe src="Pct_internet_map.html" class="map" frameborder="0"></iframe>
+        </div>
+        <div class="insights-container">
+            <h2>Insights: % Without Internet Access</h2>
+            <p>The visualization of internet access across different regions underscores the digital divide that can hinder educational and economic opportunities for underconnected communities. Areas marked with darker shades, where internet access is notably low, are likely to be disadvantaged in the increasingly digital global economy.</p>
+            <p>Initiatives to improve digital infrastructure, such as state-funded broadband expansion, public Wi-Fi in key community areas like libraries and parks, and programs providing affordable home internet services can be crucial. Schools in these areas could also benefit from programs that provide students with devices for home use, ensuring that educational opportunities are not hampered by lack of access.</p>
+        </div>
+    </div>
+
+    <!-- % Without Device Access -->
+    <div class="row">
+        <div class="map-container">
+            <iframe src="Pct_deviceAccess_map.html" class="map" frameborder="0"></iframe>
+        </div>
+        <div class="insights-container">
+            <h2>Insights: % Without Device Access</h2>
+            <p>Digital access is increasingly critical in the modern world for education, job hunting, and staying informed. Public-private partnerships can expand internet infrastructure into underserved areas, reducing the cost barrier for high-speed internet access.</p>
+            <p>Offering technology training programs in schools, libraries, and community centers can help residents leverage technology for educational and professional advancement.</p>
+        </div>
+    </div>
+
+    <!-- % Minority Population -->
+    <div class="row">
+        <div class="map-container">
+            <iframe src="Pct_minority_map.html" class="map" frameborder="0"></iframe>
+        </div>
+        <div class="insights-container">
+            <h2>Insights: % Minority Population</h2>
+            <p>This map provides insights into the demographic distribution of minority groups, with darker colors indicating higher concentrations of minority populations. These areas, while rich in cultural diversity, may often encounter challenges such as social inequality, access to quality education, and employment disparities.</p>
+            <p>Strategies to empower these communities could include enhanced support for bilingual education, community policing initiatives that promote safety and trust, and economic development programs that support minority entrepreneurship. Health services tailored to the cultural and linguistic needs of diverse populations can also ensure better healthcare outcomes and improve overall community well-being.</p>
+        </div>
+    </div>
+
+    <!-- % High School Graduates -->
+    <div class="row">
+        <div class="map-container">
+            <iframe src="Pct_HsGrad_map.html" class="map" frameborder="0"></iframe>
+        </div>
+        <div class="insights-container">
+            <h2>Insights: % High School Graduates</h2>
+            <p>Boosting high school graduation rates requires multifaceted educational reforms. Programs like peer mentoring, expanded extracurricular activities, and targeted support for at-risk students can address various out-of-classroom challenges.</p>
+            <p>Moreover, involving families in the educational process through regular communications and workshops can create a supportive home environment conducive to academic success.</p>
+        </div>
+    </div>
+
+    <!-- % Non-Native Population -->
+    <div class="row">
+        <div class="map-container">
+            <iframe src="Pct_nonNative_map.html" class="map" frameborder="0"></iframe>
+        </div>
+        <div class="insights-container">
+            <h2>Insights: % Non-Native Population</h2>
+            <p>The presence of a substantial non-native population presents unique opportunities for cultural enrichment and economic diversification but also poses challenges related to integration.</p>
+            <p>Initiatives could include multilingual education programs, community dialogues to foster understanding and reduce xenophobia, and business incubators that leverage the unique skills and perspectives of immigrants to fuel innovation and economic growth.</p>
+        </div>
+    </div>
+
+    <!-- Income Inequality (GINI Index) -->
+    <div class="row">
+        <div class="map-container">
+            <iframe src="Income_Inequality_(GINI_Index)_map.html" class="map" frameborder="0"></iframe>
+        </div>
+        <div class="insights-container">
+            <h2>Insights: Income Inequality (GINI Index)</h2>
+            <p>Addressing high income inequality requires comprehensive approaches that include both policy and community-level initiatives. Education and job training programs can provide pathways to higher-paying jobs for underserved populations.</p>
+            <p>Tax incentives could be structured to encourage businesses to invest in low-income areas, while increased social services can support the most vulnerable populations in achieving greater economic security.</p>
+        </div>
+    </div>
+
+    <!-- % Without Transportation Access -->
+    <div class="row">
+        <div class="map-container">
+            <iframe src="Pct_transportAccess_map.html" class="map" frameborder="0"></iframe>
+        </div>
+        <div class="insights-container">
+            <h2>Insights: % Without Transportation Access</h2>
+            <p>Improving transportation accessibility in underserved areas can significantly enhance quality of life by providing better access to jobs, schools, and medical care.</p>
+            <p>Community input should guide the development of new transport routes to ensure they meet the actual needs of residents. Partnerships between local governments and private companies could facilitate innovative solutions like rideshare programs or subsidized public transport passes for low-income residents.</p>
+        </div>
+    </div>
+    
+    <!-- Unemployment Rate -->
+    <div class="row">
+        <div class="map-container">
+            <iframe src="Unemployment_Rate_map.html" class="map" frameborder="0"></iframe>
+        </div>
+        <div class="insights-container">
+            <h2>Insights: Unemployment Rate</h2>
+            <p>This map highlights areas with varying unemployment rates, identifying regions where economic activity may be depressed and workforce engagement is low. The darker regions, indicative of higher unemployment, often correlate with a range of socioeconomic issues including poverty, crime, and reduced access to essential services.</p>
+            <p>Focused economic development programs, such as incentivizing businesses to invest in these areas or improving workforce education and training, can help revitalize these regions.</p>
+            <p>Additionally, implementing community projects that engage local populations in urban renewal efforts might also stimulate economic growth and improve employment rates.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
